@@ -1,0 +1,57 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Call to Action</title>
+    <style>
+        .cta-position {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .cta-icon {
+            width: 50px;
+            height: auto;
+            margin: 5px 0;
+            filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);
+        }
+
+        .cta-block {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="cta-position">
+    <a onclick="ctaAction()">
+        <img src="assets/message-icon.png" alt="Message Icon" class="cta-icon">
+    </a>
+    <div id="ctaAction" style="display: none">
+        <!--phone number-->
+        <a class="cta-block" href="tel:=919873772065" target="_blank">
+            <img src="assets/call-icon.png" alt="Call Icon" class="cta-icon">
+        </a>
+        <!--whatsapp-->
+        <a class="cta-block" href="https://wa.me/+919873772065" target="_blank">
+            <img src="assets/whatsapp-icon.png" alt="WhatsApp Icon" class="cta-icon">
+        </a>
+    </div>
+</div>
+<script>
+    function ctaAction() {
+        let x = document.getElementById("ctaAction");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
