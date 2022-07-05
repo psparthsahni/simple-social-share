@@ -8,7 +8,6 @@ function ctaAction() {
 }
 
 (function () {
-    console.log(window.location.pathname)
     let number = '';
     switch (window.location.pathname) {
         case '/dubai.html':
